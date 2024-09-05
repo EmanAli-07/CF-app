@@ -7,7 +7,7 @@ import numpy as np
 # Load the Keras model
 model_path = 'my_model.keras'
 
-@st.cache_resource  # Cache the model to avoid reloading it on each run
+@st.cache_resource  
 def load_cifar_model(model_path):
     return load_model(model_path)
 
